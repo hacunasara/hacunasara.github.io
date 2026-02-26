@@ -1,27 +1,106 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi Blog</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<body>
-  <header class="header">
-    <h1>Mi Blog</h1>
-    <p class="subtitle">Reflexiones, estudios y proyectos</p>
-  </header>
+/* Variables suaves (preparado para modo oscuro) */
+:root {
+  --bg: #faf9fb;
+  --text: #111;
+  --soft-text: #777;
+  --card: #ffffff;
+  --accent: #f3dfe6;
+}
 
-  <main class="container">
-    <article class="card">
-      <h2><a href="post.html">Mi primer post</a></h2>
-      <p>Cómo empecé mi blog desde cero.</p>
-      <span class="date">26 febrero 2026</span>
-    </article>
-  </main>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-  <footer class="footer">
-    <p>© 2026 — Mi Blog</p>
-  </footer>
-</body>
-</html>
+/* Header elegante */
+
+.header {
+  text-align: center;
+  padding: 90px 20px 50px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--soft-text);
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+/* Contenedor */
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Tarjeta estética */
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.05);
+  margin-bottom: 26px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}
+
+.card h2 a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.card p {
+  margin-top: 10px;
+  color: #555;
+}
+
+.date {
+  display: block;
+  margin-top: 16px;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 0.8rem;
+}
+
+/* Botón volver arriba */
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
