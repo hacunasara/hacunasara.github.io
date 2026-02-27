@@ -206,3 +206,44 @@ body {
 .carousel-btn.next {
   right: 10px;
 }
+
+/* ===== layout dos columnas index ===== */
+
+.two-columns {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+}
+
+/* columnas */
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* tarjeta dark */
+
+.card-dark {
+  background: #111;
+  color: white;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+
+.card-dark h2 {
+  color: white;
+}
+
+.card-dark .date {
+  color: #bbb;
+}
