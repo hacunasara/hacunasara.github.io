@@ -340,4 +340,6 @@ body.dark-post .card a {
 
 .header h1 {
   font-family: 'SaraManuscrito', serif;
+  font-size: 3.2rem;
+  line-height: 1.1;
 }
