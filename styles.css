@@ -256,26 +256,43 @@ body {
   opacity: 0.8;
 }
 
-/* ===== modo dark para posts especiales ===== */
+/* ===== modo dark para posts especiales (fix fuerte) ===== */
 
 .dark-post {
   background: #0f0f10;
   color: #f2f2f2;
 }
 
+/* TARJETA PRINCIPAL — override fuerte */
+
 .dark-post .post {
-  background: #151517;
-  color: #f2f2f2;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+  background: #151517 !important;
+  color: #f2f2f2 !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.45);
 }
+
+/* textos */
+
+.dark-post .post p,
+.dark-post .post h1,
+.dark-post .post h2,
+.dark-post .post h3 {
+  color: #f2f2f2;
+}
+
+/* enlaces */
 
 .dark-post a {
   color: #ffffff;
 }
 
+/* fechas */
+
 .dark-post .date {
   color: #b5b5b5;
 }
+
+/* sidebar */
 
 .dark-post .sidebar {
   color: #d0d0d0;
