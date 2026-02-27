@@ -255,3 +255,32 @@ body {
 .card-dark h2 a:hover {
   opacity: 0.8;
 }
+
+/* ===== modo dark para posts especiales ===== */
+
+.dark-post {
+  background: #0f0f10;
+  color: #f2f2f2;
+}
+
+.dark-post .post {
+  background: #151517;
+  color: #f2f2f2;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.dark-post a {
+  color: #ffffff;
+}
+
+.dark-post .date {
+  color: #b5b5b5;
+}
+
+.dark-post .sidebar {
+  color: #d0d0d0;
+}
+
+.dark-post .sidebar h3 {
+  color: #ffffff;
+}
