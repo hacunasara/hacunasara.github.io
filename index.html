@@ -39,5 +39,24 @@
   <footer class="footer">
     <p>© 2026 — Blog de Sara Hernández</p>
   </footer>
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+
+    let index = 0;
+
+    nextBtn.onclick = () => {
+      index++;
+      if (index > track.children.length - 1) index = 0;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    prevBtn.onclick = () => {
+      index--;
+      if (index < 0) index = track.children.length - 1;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    };
+  </script>
 </body>
 </html>
