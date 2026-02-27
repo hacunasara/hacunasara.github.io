@@ -312,3 +312,18 @@ body.dark-post .post {
 body.dark-post {
   background: #0f0f10 !important;
 }
+
+/* ===== DARK PARA TARJETAS EN POSTS OSCUROS ===== */
+
+body.dark-post .card {
+  background: #151517 !important;
+  color: #f2f2f2 !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+body.dark-post .card h1,
+body.dark-post .card h2,
+body.dark-post .card p,
+body.dark-post .card a {
+  color: #f2f2f2 !important;
+}
