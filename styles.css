@@ -247,3 +247,11 @@ body {
 .card-dark .date {
   color: #bbb;
 }
+.card-dark h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-dark h2 a:hover {
+  opacity: 0.8;
+}
