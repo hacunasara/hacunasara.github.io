@@ -368,6 +368,11 @@ body.dark-post .card a {
   background: #f4f4f6;
 }
 
+.slide img {
+  position: relative;
+  z-index: 1;
+}
+
 .slide-text {
   font-size: 0.9rem;
   color: #555;
