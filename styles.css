@@ -384,3 +384,12 @@ body.dark-post .card a {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+/* ===== posts dark sin efecto tarjeta ===== */
+
+body.dark-post .card {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
