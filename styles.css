@@ -405,4 +405,18 @@ body.dark-post .card {
   margin-top: 0;
 }
 
+/* ===== post dark estilo editorial limpio ===== */
+
+body.dark-post .post {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+body.dark-post .post h1 {
+  margin-top: 0;
+}
+
 
