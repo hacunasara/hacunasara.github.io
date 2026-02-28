@@ -405,4 +405,56 @@ body.dark-post .card {
   margin-top: 0;
 }
 
+/* ===== SALAS · estética museo ===== */
+
+.sala-title {
+  font-size: 2.6rem;
+  margin-bottom: 6px;
+}
+
+.sala-subtitle {
+  font-size: 1.05rem; /* un poco mayor que el texto */
+  color: #e6e6e6;
+  margin-bottom: 42px;
+}
+
+/* ===== pieza museo ===== */
+
+.pieza-museo {
+  display: grid;
+  grid-template-columns: 1fr 260px; /* imagen izq · texto dcha */
+  gap: 40px;
+  align-items: center;
+  margin: 56px 0;
+}
+
+/* centrado perfecto independientemente del tamaño */
+
+.pieza-media,
+.pieza-texto {
+  display: flex;
+  align-items: center;
+}
+
+/* imagen */
+
+.pieza-media img,
+.pieza-media iframe,
+.pieza-media video {
+  width: 100%;
+  display: block;
+}
+
+/* texto */
+
+.pieza-texto {
+  font-size: 0.95rem;
+  color: #f2f2f2;
+  line-height: 1.5;
+}
+
+.pieza-caption {
+  margin: 0;
+}
+
 
