@@ -502,3 +502,30 @@ body.dark-post .card {
 .pieza-caption {
   margin: 0;
 }
+
+.pieza-museo {
+  display: grid;
+  grid-template-columns: minmax(0, 520px) 260px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;   /* centra la composición */
+  margin: 56px 0;
+}
+
+/* centrado interno perfecto */
+
+.pieza-media,
+.pieza-texto {
+  display: flex;
+  align-items: center;
+}
+
+/* imagen */
+
+.pieza-media img,
+.pieza-media iframe,
+.pieza-media video {
+  width: 100%;
+  display: block;
+  max-width: 520px;
+}
