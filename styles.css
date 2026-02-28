@@ -182,7 +182,7 @@ body {
   flex-shrink: 0;
   height: 260px;
   object-fit: contain;
-  border-radius: 16px;
+  border-radius: 0;
 }
 
 /* flechas */
