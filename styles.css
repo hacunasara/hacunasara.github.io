@@ -363,3 +363,14 @@ body.dark-post .card a {
   color: #555;
   line-height: 1.5;
 }
+
+/* ===== imágenes post estilo limpio ===== */
+
+.post-image {
+  margin: 24px 0;
+}
+
+.post-image img {
+  width: 100%;
+  display: block;
+}
