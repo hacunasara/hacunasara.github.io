@@ -374,3 +374,13 @@ body.dark-post .card a {
   width: 100%;
   display: block;
 }
+
+/* ===== quitar frame galería ===== */
+
+.carousel-track img,
+.slide img {
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
