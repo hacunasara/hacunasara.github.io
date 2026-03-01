@@ -606,3 +606,19 @@ body.dark-post .card {
 
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
+
+/* ===== TARJETAS SALAS (ARCHIVE) ===== */
+
+.card-dark {
+  background: #1c1c1f;   /* gris oscuro elegante */
+  border: 1px solid #2a2a2e;
+}
+
+.card-dark h2 a {
+  color: #ffffff;
+}
+
+.card-dark p,
+.card-dark .date {
+  color: #bfbfc4;
+}
