@@ -636,3 +636,9 @@ body.dark-post .card {
   background: #2a2a2e !important;
   color: #f2f2f2;
 }
+
+/* ===== ARCHIVE — MISMA TARJETA PERO GRIS ===== */
+
+.card.card-dark {
+  background: #2a2a2e;
+}
