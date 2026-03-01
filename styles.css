@@ -629,3 +629,10 @@ body.dark-post .card {
   background: #2a2a2e;   /* gris oscuro visible */
   color: #f2f2f2;
 }
+
+/* ===== ARCHIVE — MISMA TARJETA QUE YOUTH ===== */
+
+.card.card-dark {
+  background: #2a2a2e !important;
+  color: #f2f2f2;
+}
