@@ -585,7 +585,7 @@ body.dark-post .card {
 .slide img {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
