@@ -715,3 +715,9 @@ body.dark-post .card.card-dark {
 .home-link:hover::after {
   opacity: 0.4;
 }
+
+/* ===== ARCHIVE sin outline ===== */
+
+.card.card-dark {
+  border: none !important;
+}
