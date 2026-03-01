@@ -385,13 +385,7 @@ body.dark-post .card a {
   box-shadow: none !important;
 }
 
-/* ===== posts dark sin efecto tarjeta ===== */
 
-body.dark-post .card {
-  background: transparent !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
 }
 
 /* ===== post dark sin estructura de tarjeta ===== */
@@ -641,4 +635,13 @@ body.dark-post .card {
 
 .card.card-dark {
   background: #2a2a2e;
+}
+
+/* ===== FIX: las salas SÍ son tarjetas ===== */
+
+body.dark-post .card.card-dark {
+  background: #2a2a2e !important;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25) !important;
+  border-radius: 20px !important;
+  padding: 30px !important;
 }
