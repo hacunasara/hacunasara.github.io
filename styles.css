@@ -529,3 +529,14 @@ body.dark-post .card {
   display: block;
   max-width: 520px;
 }
+
+/* ===== YOUTH · posts centrados ===== */
+
+.youth-posts {
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
