@@ -701,3 +701,9 @@ body.dark-post .card.card-dark {
 .card.card-dark {
   border: none !important;
 }
+
+/* ===== ARCHIVE — quitar halo de tarjeta ===== */
+
+.archive-posts .card.card-dark {
+  box-shadow: none !important;
+}
