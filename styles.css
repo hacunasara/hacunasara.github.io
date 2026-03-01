@@ -707,3 +707,19 @@ body.dark-post .card.card-dark {
 .archive-posts .card.card-dark {
   box-shadow: none !important;
 }
+
+/* ===== cartela en columna (museo) ===== */
+
+.pieza-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* crédito de foto */
+
+.photo-credit {
+  font-size: 0.75rem;
+  color: #9a9aa0;
+  margin-top: 6px;
+}
