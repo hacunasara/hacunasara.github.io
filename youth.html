@@ -2,36 +2,82 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>YOUTH ARCHIVE by Sara Hernández</title>
+  <title>Youth — Sara Hernández</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="dark-post">
-  <header class="header">
-    <h1>YOUTH ARCHIVE by Sara Hernández</h1>
-    <p class="subtitle">pensamientos y multimedia de mis 20s &lt;3</p>
-  
+<body>
 
-  </header>
+<header class="header">
+  <h1>Youth Archive</h1>
+  <p class="subtitle">pensamientos y multimedia de mis 20s &lt;3</p>
+</header>
 
-  <main class="youth-posts">
+<!-- ===== GALERÍA (3 fotos visibles) ===== -->
 
-    <article class="card">
-      <h2><a href="post.html">Blablabla</a></h2>
-      <p>blabla</p>
-      <span class="date">27 febrero 2026</span>
-    </article>
+<section class="carousel">
+  <button class="carousel-btn prev">‹</button>
 
-    <article class="card">
-      <h2><a href="segundo-post.html">Contradicciones</a></h2>
-      <p>felicidad e infelicidad</p>
-      <span class="date">2026</span>
-    </article>
+  <div class="carousel-track">
 
-    <article class="card">
-      <h2><a href="tercer-post.html">Año Nuevo</a></h2>
-      <p></p>
-      <span class="date">2026</span>
-    </article>
+    <div class="slide">
+      <img src="foto1.jpg" alt="">
+    </div>
 
-  </main>
+    <div class="slide">
+      <img src="foto2.jpg" alt="">
+    </div>
+
+    <div class="slide">
+      <img src="foto3.jpg" alt="">
+    </div>
+
+  </div>
+
+  <button class="carousel-btn next">›</button>
+</section>
+
+<!-- ===== POSTS ===== -->
+
+<main class="youth-posts">
+
+  <article class="card">
+    <h2><a href="#">Título post</a></h2>
+    <p>Descripción.</p>
+    <span class="date">Fecha</span>
+  </article>
+
+  <article class="card">
+    <h2><a href="#">Título post</a></h2>
+    <p>Descripción.</p>
+    <span class="date">Fecha</span>
+  </article>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 — Youth Archive by Sara Hernández</p>
+</footer>
+
+<script>
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+
+let index = 0;
+
+nextBtn.onclick = () => {
+  index++;
+  if (index > track.children.length - 3) index = 0;
+  track.style.transform = `translateX(-${index * (100/3)}%)`;
+};
+
+prevBtn.onclick = () => {
+  index--;
+  if (index < 0) index = track.children.length - 3;
+  track.style.transform = `translateX(-${index * (100/3)}%)`;
+};
+</script>
+
+</body>
+</html>
