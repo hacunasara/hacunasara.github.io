@@ -622,3 +622,10 @@ body.dark-post .card {
 .card-dark .date {
   color: #bfbfc4;
 }
+
+/* ===== ARCHIVE — misma tarjeta que youth ===== */
+
+.card-dark {
+  background: #2a2a2e;   /* gris oscuro visible */
+  color: #f2f2f2;
+}
