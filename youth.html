@@ -78,19 +78,20 @@ const prevBtn = document.querySelector('.carousel-btn.prev');
 const nextBtn = document.querySelector('.carousel-btn.next');
 
 let index = 0;
-const visibleSlides = 3;
 
-nextBtn.onclick = () => {
-  const maxIndex = track.children.length - visibleSlides;
-  index = index >= maxIndex ? 0 : index + 1;
-  track.style.transform = `translateX(-${index * (100 / visibleSlides)}%)`;
-};
+function updateCarousel() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
 
-prevBtn.onclick = () => {
-  const maxIndex = track.children.length - visibleSlides;
-  index = index <= 0 ? maxIndex : index - 1;
-  track.style.transform = `translateX(-${index * (100 / visibleSlides)}%)`;
-};
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % track.children.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + track.children.length) % track.children.length;
+  updateCarousel();
+});
 </script>
 
 </body>
