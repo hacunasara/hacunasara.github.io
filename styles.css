@@ -746,3 +746,9 @@ body.dark-post .card.card-dark {
   text-underline-offset: 2px;
   color: inherit !important;
 }
+
+/* ===== tamaño enlaces home ===== */
+
+.home-link {
+  font-size: 2.4rem;
+}
