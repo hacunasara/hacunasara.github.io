@@ -572,8 +572,8 @@ body.dark-post .card a {
 }
 
 .slide {
-  flex: 0 0 calc(100% / 3);
-  padding: 0 6px;
+  flex: 0 0 100%;
+  padding: 0;
 }
 
 .slide img {
