@@ -692,28 +692,8 @@ body.dark-post .card.card-dark {
 .home-link {
   text-decoration: none;
   color: var(--text);
-  font-size: 1.6rem;        /* ← MUCHO más grande */
-  letter-spacing: 0.18em;
+  font-size: 1.6rem;
   font-weight: 500;
-  position: relative;
-  padding-bottom: 8px;
-}
-
-/* línea editorial */
-
-.home-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background: rgba(0,0,0,0.18);
-  transition: opacity 0.2s ease;
-}
-
-.home-link:hover::after {
-  opacity: 0.4;
 }
 
 /* ===== ARCHIVE sin outline ===== */
