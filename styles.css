@@ -645,3 +645,56 @@ body.dark-post .card.card-dark {
   border-radius: 20px !important;
   padding: 30px !important;
 }
+
+/* ===== HOME LANDING ===== */
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.home-inner {
+  text-align: center;
+  max-width: 520px;
+  width: 100%;
+}
+
+.home-photo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 28px;
+}
+
+.home-title {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.home-subtitle {
+  margin-top: 10px;
+  color: var(--soft-text);
+  font-size: 0.95rem;
+}
+
+.home-links {
+  margin-top: 42px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.home-link {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.home-link:hover {
+  opacity: 0.6;
+}
