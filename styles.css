@@ -691,20 +691,12 @@ body.dark-post .card.card-dark {
 
 /* ===== subrayado fino estilo enlace ===== */
 
-.home-link {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
+/* ===== subrayado limpio home ===== */
 
-.home-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;      /* 🔥 pegado al texto */
-  width: 100%;
-  height: 1px;
-  background: #d6d6db;
+.home-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 /* ===== ARCHIVE sin outline ===== */
